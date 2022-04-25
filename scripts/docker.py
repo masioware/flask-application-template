@@ -15,4 +15,4 @@ def docker_build():
 
 
 def docker_run():
-    system(f"docker run -p 80:5000 {docker_tag}:latest")
+    system(f"docker run -d -p 80:5000 --name {docker_tag} {docker_tag}:latest")

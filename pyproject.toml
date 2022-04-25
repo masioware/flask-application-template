@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "flask-application-template"
+name = "app"
 version = "0.1.2"
 description = "This application is a model of how to implement tools and extensions for Flask"
 authors = []
@@ -15,6 +15,10 @@ flake8 = "^4.0.1"
 isort = "^5.10.1"
 autopep8 = "^1.6.0"
 httpie = "^3.1.0"
+
+[tool.poetry.scripts]
+docker-build = "scripts.docker:docker_build"
+docker-run = "scripts.docker:docker_run"
 
 [tool.isort]
 profile = "black"

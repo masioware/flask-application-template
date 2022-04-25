@@ -1,4 +1,4 @@
-# poetry-flask-example
+# flask-application-template
 ### Docker Commands
 
 - Update project and build docker image

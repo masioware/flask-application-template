@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # set work directory
-WORKDIR /poetry-flask-example
+WORKDIR /flask-application-template
 
 # copy project files
 COPY start.sh ./

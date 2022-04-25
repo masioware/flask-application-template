@@ -5,7 +5,7 @@ from app import create_app
 
 @fixture(scope="module")
 def test_client():
-    """Cria um Cliente Flask configurado para testes"""
+    """Create a Client Flask configured for testing"""
     app = create_app()
 
     with app.test_client() as test_client:

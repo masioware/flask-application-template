@@ -7,8 +7,10 @@ hc = Blueprint("Health Check", __name__)
 
 @hc.route("/health-check")
 def heath_check():
+    """Route for application health check"""
     return jsonify(status="OK"), HTTPStatus.OK
 
 
 def init(app):
+    """Register the Blueprint with an injected Flask application"""
     app.register_blueprint(hc)

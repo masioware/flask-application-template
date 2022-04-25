@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "flask-application-template"
-version = "0.1.0"
-description = ""
-authors = ["Marcio Martinez <marcioedumartinez@gmail.com>"]
+version = "0.1.2"
+description = "This application is a model of how to implement tools and extensions for Flask"
+authors = []
 
 [tool.poetry.dependencies]
 python = "^3.10"

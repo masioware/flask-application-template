@@ -1,3 +1,10 @@
-.pytest_cache
+# Python
 __pycache__
+
+# Dependencies
 requirements.txt
+
+# Test
+.pytest_cache
+.coverage
+coverage.xml

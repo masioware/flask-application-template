@@ -10,6 +10,7 @@ Flask = "^2.1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.1"
+pytest-cov = "^3.0.0"
 black = "^22.3.0"
 flake8 = "^4.0.1"
 isort = "^5.10.1"
@@ -19,6 +20,9 @@ httpie = "^3.1.0"
 [tool.poetry.scripts]
 docker-build = "scripts.docker:docker_build"
 docker-run = "scripts.docker:docker_run"
+docker-stop = "scripts.docker:docker_stop"
+docker-rm = "scripts.docker:docker_delete"
+pytest-cov = "scripts.pytest:run_tests_with_coverage"
 
 [tool.isort]
 profile = "black"

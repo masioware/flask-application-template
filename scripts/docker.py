@@ -16,3 +16,11 @@ def docker_build():
 
 def docker_run():
     system(f"docker run -d -p 80:5000 --name {docker_tag} {docker_tag}:latest")
+
+
+def docker_stop():
+    system(f"docker stop {docker_tag}")
+
+
+def docker_delete():
+    system(f"docker rm -f {docker_tag}")

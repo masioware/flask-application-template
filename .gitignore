@@ -8,3 +8,6 @@ requirements.txt
 .pytest_cache
 .coverage
 coverage.xml
+
+# Logfiles
+*.log

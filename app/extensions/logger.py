@@ -9,8 +9,8 @@ def init(app):
 
     logger.info("starting logger extension")
 
-    level = "INFO" if app.env == "production" else "TRACE"
-    sink = "app.log" if app.env == "production" else stdout
+    prod_env = app.env == "production"
+    level, sink = "INFO", "app.log" if prod_env else "TRACE", stdout
 
     # create a new handler
     logger.add(sink=sink, level=level)
